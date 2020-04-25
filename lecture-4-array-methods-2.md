@@ -18,7 +18,17 @@ We want to filter out all negative numbers:
 `[3, 1, 5, 8, 4]`
 
 How do we do that?
+```js
+arr = [3, -7, 1, 5, -2, 8, -9, 4];
 
+let newPositiveArray = arr.filter(function checkIfPositive(item) {
+  return item > 0;
+})
+newPositiveArray
+//returns [3,1,5,8,4]
+
+
+```
 ---
 
 `for` loops are very _flexible_, but they're not very _focused_.
@@ -46,9 +56,15 @@ const words = [
 
 words.forEach(function (word) {
   // do something
+  console.log(word);
+})
 });
 
 // Compare that to a for loop:
+for (let i = 0; i < words.length; i++) {
+  console.log(words[i]);
+}
+
 ```
 
 ---
