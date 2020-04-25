@@ -16,5 +16,27 @@ const myArray = [
   'funky',
 ];
 
-console.log(myArray, 'funky'); // true
-console.log(myArray, 'elephant'); // false
+itemIsPresent(myArray, 'funky'); // true
+itemIsPresent(myArray, 'elephant'); // false
+
+//solution 
+
+const myArray = [
+  'bacon',
+  'purple',
+  'door',
+  'window',
+  'exist',
+  'code',
+  'program',
+  'funky',
+];
+
+//really went straightforward.
+
+function itemIsPresent(array,item) {
+  return array.includes(item);
+}
+
+itemIsPresent(myArray, 'funky'); // true
+itemIsPresent(myArray, 'elephant'); // false
