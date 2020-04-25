@@ -59,9 +59,25 @@ let rectangle = { length: 10, width: 4 };
 ```js
 // Q4. Write a function that returns the value of the tax for a given amount.
 
+function taxMe(amount,tax = 0.15) {
+    return amount*tax;
+}
+taxMe(20.0);
+
 // Q5. Write a function that returns the value 42.
 
+function gimme42() {
+    return 42;
+}
+gimme42();
+
 // Q6. Write a function that returns "Hello!".
+
+function greetMe() {
+    return "Hello!"
+} 
+greetMe();
+
 ```
 
 ---
