@@ -10,8 +10,26 @@
 // and returns a number that indicates how many uppercase “B”
 // characters there are in the string.
 
+// -------------------------------------------------------------------------
+// ----------------------------- SOLUTION ----------------------------------
+// -------------------------------------------------------------------------
+//using .match() with a global regex
 function countBs(str) {
-
+    let count = str.match(/B/g).length;
+    console.log(count);
 }
+
+//using for loop, check if each char is equal to B
+function countBs(str) {
+    let count = 0;
+    for(let i=0; i < str.length; i++ ) {
+        if (str[i] == "B") {
+            count++;
+        }
+    }
+    console.log(count);
+}
+
+
 // -------------------------------------------------------------------------
 console.log('Q1: ', countBs('BananaBabyBubbles'));
