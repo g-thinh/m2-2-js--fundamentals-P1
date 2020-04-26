@@ -13,9 +13,29 @@
 // function isEven(x) {return x % 2 === 0;}
 // filter([1, 2, 3, 4, 5], isEven) returns [2,4];
 
+
+
 function filter(lst, func) {
   // lst is an array and f is a function
   // func takes one argument and returns a boolean (true or false)
+
+  //create emtpy array to hold results
+  let result = [];
+
+  //loop through each item in he list
+  for(let i=0; i < lst.length;i++) {
+
+    //the function must return a bool, so it can be applied on each item
+    if(func(lst[i])) {
+
+      //if function returns true, add the item to the results list
+      result.push(lst[i]);
+    }
+  }
+
+  //print results
+  console.log(result);
+
 }
 // -------------------------------------------------------------------------
 function keepLong(str) {
